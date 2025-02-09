@@ -8,13 +8,13 @@ int main(){
     int number_in;
 
     //pede ao ususario o tempo limite do cronometro
-    printf("Informe o tempo limite:");
+    printf("Informe o tempo limite: ");
     scanf("%d", &number_in);
     //loop infinito
     while (1)
     {
         time_t now = time(NULL);
-        // calcula a diferença entre agora e o inicio - o int é para converter para valor nterio, difftime retorna um double
+        // calcula a diferença entre agora e o inicio - o int é para converter para valor interio, difftime retorna um double
         int seg_pass = (int) difftime(now, start);
 
         // \r faz com que atualize na mesma linha, sem ficar criando inumeras linhas no terminal
